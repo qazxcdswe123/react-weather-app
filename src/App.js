@@ -18,7 +18,6 @@ function App() {
     const forecastFetch = fetch(
       `${WEATHER_API_URL}/forecast?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`
     );
-    
     const airPollutionFectch = fetch(
       `${POLLUTION_API_URL}/geo:${Math.trunc(lat)};${Math.trunc(lon)}/?token=${POLLUTION_API_KEY}`
     )
